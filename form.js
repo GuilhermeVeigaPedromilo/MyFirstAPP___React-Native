@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import styles from './assets/css/style'; // Importa o arquivo de estilo
 
-export default function App() {
+export default function form() {
 
   changeText = () => {
     alert("HELLO :D");
@@ -18,15 +18,20 @@ return (
           uri: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png', 
         }}/>
         <Text style={{color: 'white', fontSize: 25}} >2023_DES-I1HN - 2ºS-DES. DE SISTEMAS - NOVA ODESSA</Text>
-        <Text redirect="/form" >Form</Text>
+        <Text href="/form">Form</Text>
   </View>
   <View style={styles.secondaryContainer}>
-  <Text style={{ color: 'blue', fontWeight: 'bold', fontSize: 30, textAlign: 'right' }} >Guilherme Veiga Pedromilo</Text>
-  <Text style={{ fontSize: 25, textAlign: 'left', }} >18</Text>
-  <Text style={{ fontStyle: 'italic', fontSize: 20, textAlign: 'center', backgroundColor: 'pink'}} >07</Text>
-  <Text style={{ color: 'cyan', fontSize: 25, textAlign: 'center'}} >Primeira aplicação com React-Native</Text>
+  <TextInput style={styles.inputName} 
+  placeholder='Digite seu nome' 
+  inputMode='numeric'
+  secureTextEntry={true}
+  placeholderTextColor='red'  
+  onChangeText={changeText}
+  />
   </View>
   <View style={{ backgroundColor: 'gray', width: '100%', height: 75, justifyContent: 'center' }}>
+
+
   </View>
   </View>
   );

@@ -23,7 +23,13 @@ const styles = StyleSheet.create({
           gap: 40,
           alignItems: 'center',
           justifyContent: 'flex-start',
-        }
+        },
+
+        inputName: {
+          borderWidth: 1,
+          padding: 15,
+          fontSize: 20,
+        },
   });
 
   export default styles;
