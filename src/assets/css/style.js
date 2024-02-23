@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
           borderWidth: 1,
           padding: 15,
           fontSize: 20,
+          width: 300,
         },
   });
 
