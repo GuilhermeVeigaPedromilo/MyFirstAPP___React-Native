@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 
     tinyLogo: {
-      width: 200,
-      height: 50,
+      width: 65,
+      height: 15,
       left: 30,
       textAlign:'center',
     },
