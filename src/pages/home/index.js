@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import styles from '../../assets/css/style'; // Importa o arquivo de estilo
 import HeaderPrincipal from '../../assets/components/headerprincipal';
+import api from '../../services/api';
 
 export default function Index() { // Certifique-se de que o componente está sendo exportado como padrão
 
