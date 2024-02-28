@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput, ImageBackground, Button } from 'react-native';
-import styles from '../../assets/css/stylelcadastro'; // Importa o arquivo de estilo
+import styles from '../assets/css/stylelcadastro'; // Importa o arquivo de estilo
 
 export default function Cadastro() { // Alteração aqui: export default function Login()
 
@@ -13,12 +13,12 @@ export default function Cadastro() { // Alteração aqui: export default functio
         <View style={styles.container}>
             <ImageBackground
                 style={styles.body}
-                source={require('../../images/fundo.jpg')}>
+                source={require('../images/fundo.jpg')}>
 
                 <View style={styles.submenu}>
                     <Image
                         style={{ width: 180, height: 25, }}
-                        source={require('../../images/sesi-senai.jpg')} />
+                        source={require('../images/sesi-senai.jpg')} />
                     <View style={{ gap: 10, }} >
                         <TextInput
                             placeholder='Digite seu nome'
